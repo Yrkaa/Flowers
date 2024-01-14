@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">Flowers</string>
+    <string-array name="flowers_list">
+        <item>
+            101 голландский пион
+        </item>
+
+        <item>
+            Отличный букет из 31 тюльпана
+        </item>
+
+        <item>
+            Нежнейший букет из 51 тюльпана
+        </item>
+    </string-array>
+    <string-array name="test">
+        <item>
+            AAAA
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+
+        <item>
+            BBBB
+        </item>
+    </string-array>
 </resources>

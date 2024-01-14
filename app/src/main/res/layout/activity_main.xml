@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
                 android:isScrollContainer="true"/>
 
             <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/tg_iv"
                 android:layout_width="290px"
                 android:layout_height="400px"
                 android:src="@drawable/tg"
@@ -64,6 +66,7 @@
         android:layout_height="35dp"
         android:background="@drawable/spinner"
         android:popupBackground="#2C2C2C"
+        android:dropDownWidth="1000dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
@@ -75,11 +78,16 @@
         android:id="@+id/flowers_list"
         android:layout_width="match_parent"
         android:layout_height="476dp"
+        android:entries="@array/flowers_list"
+        android:divider="#FFF"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
