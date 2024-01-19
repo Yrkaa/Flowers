@@ -7,10 +7,12 @@
     tools:context=".FlowerItemPage">
 
     <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/flower_photo_in_page"
         android:layout_width="365dp"
         android:layout_height="372dp"
         android:src="@mipmap/ic_launcher"
-        app:riv_border_width="5dp"
+        app:riv_corner_radius="15dp"
+        app:riv_border_width="10dp"
         app:riv_border_color="#FFE500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,6 +22,7 @@
         app:layout_constraintVertical_bias="0.053" />
 
     <TextView
+        android:id="@+id/flower_name_in_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
@@ -31,6 +34,7 @@
         app:layout_constraintVertical_bias="0.635" />
 
     <Button
+        android:id="@+id/pay_btn"
         android:layout_width="377dp"
         android:layout_height="65dp"
         android:backgroundTint="#FFE500"

@@ -1,5 +1,6 @@
 package com.example.flowers;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -94,6 +95,17 @@ public class FlowersListItem extends Fragment {
         //Задаем карточку согласно параметрам
         photoIv.setImageResource(photoId);
         flowerNameTv.setText(flowerName);
+
+        //Переходим на страничку букета
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toFlowerPage = new Intent(FlowersListItem.this.getActivity(), FlowerItemPage.class);
+                toFlowerPage.putExtra("name", flowerName);
+                toFlowerPage.putExtra("photoId", photoId);
+                startActivity(toFlowerPage);
+            }
+        });
 
     }
 
